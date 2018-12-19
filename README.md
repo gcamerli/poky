@@ -49,8 +49,6 @@ $ runqemu qemux86
 
 If the `bitbake` process ends up fine you should be able to boot your first **x86_64** Linux image built with yocto, using the [core-image-minimal](https://layers.openembedded.org/layerindex/recipe/579/) layer.
 
-![boot](https://github.com/gcamerli/poky/blob/master/img/boot.png)
-
 ---
 
 Happy hacking!
