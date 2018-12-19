@@ -41,20 +41,21 @@ function network {
   echo -e "Docker network ...$green done$white"
 }
 
-function run {
+function compose {
   echo ""
-  echo -e "$green[Start]$white Docker run"
+  echo -e "$green[Start]$white Docker compose"
   echo ""
-  bash run.sh
+  docker-compose up -d
+  docker exec -it yocto zsh
   echo ""
-  echo -e "Docker run ...$green done$white"
+  echo -e "Docker compose ...$green done$white"
 }
 
 function main () {
   build
   clean
   network
-  run
+  compose
 }
 
 main
