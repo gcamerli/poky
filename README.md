@@ -30,6 +30,10 @@ All the data created with **poky** are persistent and stored in the volume `poky
 
 Inside your **host** machine you can easily find under the path: `/var/lib/docker/volumes/poky`.
 
+### **Device**
+
+To boot the yocto images inside the **poky** container it's necessary to add the device [`/dev/net/tun`](https://www.kernel.org/doc/Documentation/networking/tuntap.txt) from the host machine with the flag `--device=/dev/net/tun`.
+
 ### **Yocto**
 
 Once you're inside the container, you can test your **yocto** environment in this way:
