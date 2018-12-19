@@ -68,10 +68,13 @@ RUN cp -af /etc/skel/ /etc/vncskel/ && \
     echo "" | vncpasswd -f > /etc/vncskel/.vnc/passwd && \
     chmod 600 /etc/vncskel/.vnc/passwd
 
+# Term
+ENV TERM=xterm
+
 # Config
-COPY build-install-dumb-init.sh /
-RUN bash /build-install-dumb-init.sh
-RUN rm /build-install-dumb-init.sh
+COPY build-dumb-init.sh /
+RUN bash /build-dumb-init.sh
+RUN rm /build-dumb-init.sh
 
 # User
 RUN echo "yocto ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
