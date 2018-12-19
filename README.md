@@ -43,13 +43,13 @@ Once you're inside the container, you can test your **yocto** environment in thi
 ```shell
 $ cd poky
 $ source oe-init-build-env qemux86-build
-$ bitbake core-image-minimal :coffee: # requires a long time ...
+$ bitbake core-image-minimal # requires a long time ...
 $ runqemu qemux86
 ```
 
 If the `bitbake` process ends up fine you should be able to boot your first **x86_64** Linux image built with yocto, using the [core-image-minimal](https://layers.openembedded.org/layerindex/recipe/579/) layer.
 
-![boot](img/boot.png)
+![boot](https://github.com/gcamerli/poky/blob/master/img/boot.png)
 
 ---
 
@@ -67,7 +67,7 @@ For more info check out the official doc:
 
 or take a look at the cheat sheet:
 
-+ [cheat sheet](doc/yocto_cheatsheet.pdf)
++ [cheat sheet](https://github.com/gcamerli/poky/blob/master/doc/yocto_cheatsheet.pdf)
 
 ### **GPL License**
 
