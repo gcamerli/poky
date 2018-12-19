@@ -1,0 +1,28 @@
+version: '3.6'
+
+services:
+  yocto:
+    image: poky:latest
+    user: yocto
+    hostname: poky
+    pid: host
+    restart: always
+    container_name: yocto
+    volumes:
+      - data:/home/yocto/poky
+    networks:
+      net:
+        aliases:
+          - poky
+        ipv4_address: 172.42.1.2
+
+volumes:
+  data:
+    name: poky
+    labels:
+      safety: "keep"
+
+networks:
+  net:
+    external:
+      name: yocto
