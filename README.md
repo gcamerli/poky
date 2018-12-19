@@ -22,13 +22,7 @@ This bash script (_to use at your own risk if you have sensitive data on your sy
 + Build locally the Docker **image**
 + Cleanup your **system** :warning:
 + Create the **bridge** network
-+ Run the image with `docker-compose`
-
-If you want just to pull a **pre-built** image just execute:
-
-```shell
-$ ./run.sh
-```
++ Run the image
 
 ### **Storage**
 
