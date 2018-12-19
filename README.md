@@ -22,7 +22,17 @@ This bash script (_to use at your own risk if you have sensitive data on your sy
 + Build locally the Docker **image**
 + Cleanup your **system** :warning:
 + Create the **bridge** network
-+ Run the image
++ Run the container with `docker-compose`
+
+**[1]** The container will leave in background also if you exit, so to access again execute: `docker exec -it yocto zsh`.
+
+To save time if you want to run a **pre-built** image execute directly:
+
+```shell
+$ ./run.sh
+```
+
+**[2]** the container will be removed when you exit.
 
 ### **Storage**
 
