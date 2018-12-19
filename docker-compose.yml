@@ -10,6 +10,10 @@ services:
     container_name: yocto
     volumes:
       - data:/home/yocto/poky
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - NET_ADMIN
     networks:
       net:
         aliases:
