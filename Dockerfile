@@ -48,6 +48,7 @@ RUN dnf -y update && \
         hostname \
         procps \
         tigervnc-server \
+        kmod \
         vim \
         zsh \
         minicom
