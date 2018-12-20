@@ -51,6 +51,7 @@ RUN dnf -y update && \
         kmod \
         vim \
         zsh \
+	iproute \
         minicom
 
 RUN dnf -y clean all
