@@ -44,6 +44,10 @@ Inside your **host** machine you can easily find under the path: `/var/lib/docke
 
 To boot the yocto images inside the **poky** container it's necessary to add the device [`/dev/net/tun`](https://www.kernel.org/doc/Documentation/networking/tuntap.txt) from the host machine with the flag `--device=/dev/net/tun`.
 
+### **Display**
+
+To run the yocto image it's necessary to share the **X11** socket as a volume.
+
 ### **Yocto**
 
 Once you're inside the container, you can test your **yocto** environment in this way:
@@ -56,6 +60,8 @@ $ runqemu qemux86
 ```
 
 If the `bitbake` process ends up fine you should be able to boot your first **x86_64** Linux image built with yocto, using the [core-image-minimal](https://layers.openembedded.org/layerindex/recipe/579/) layer.
+
+![boot](img/boot.png)
 
 ---
 
