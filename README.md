@@ -24,7 +24,7 @@ This bash script (_to use at your own risk if you have sensitive data on your sy
 + Create the **bridge** network
 + Run the container with `docker-compose`
 
-**[1]** The container will leave in background also if you exit, so to access again execute: `docker exec -it yocto zsh`.
+**[¹]** the container will leave in background also if you exit, so to access again execute: `docker exec -it yocto zsh`.
 
 To save time if you want to run a **pre-built** image execute directly:
 
@@ -32,7 +32,7 @@ To save time if you want to run a **pre-built** image execute directly:
 $ ./run.sh
 ```
 
-**[2]** the container will be removed when you exit.
+**[²]** the container will be removed when you exit.
 
 ### **Storage**
 
