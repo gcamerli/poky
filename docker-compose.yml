@@ -10,8 +10,11 @@ services:
     container_name: yocto
     volumes:
       - data:/home/yocto/poky
+      - /tmp/.X11-unix:/tmp/.X11-unix
     devices:
       - /dev/net/tun:/dev/net/tun
+    environment:
+      - DISPLAY=unix$DISPLAY
     cap_add:
       - NET_ADMIN
     entrypoint: /bin/zsh
