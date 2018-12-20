@@ -59,9 +59,11 @@ $ bitbake core-image-minimal # requires a long time ...
 $ runqemu qemux86
 ```
 
-If the `bitbake` process ends up fine you should be able to boot your first **x86_64** Linux image built with yocto, using the [core-image-minimal](https://layers.openembedded.org/layerindex/recipe/579/) layer.
+If the `bitbake` process ends up fine you should be able to boot your first **x86_64** Linux image built with yocto, using the [core-image-minimal](https://layers.openembedded.org/layerindex/recipe/579/) layer, and see something like this:
 
-![boot](img/boot.png)
+<p align="center">
+  <img src="https://github.com/gcamerli/poky/blob/master/img/boot.png?raw=true" alt="Yocto boot"/>
+</p>
 
 ---
 
