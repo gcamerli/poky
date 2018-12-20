@@ -19,10 +19,10 @@ $  ./set.sh
 
 This bash script (_to use at your own risk if you have sensitive data on your system_) will:
 
-+ Build locally the Docker **image**
-+ Cleanup your **system** :warning:
-+ Create the **bridge** network
-+ Run the container with `docker-compose`
++ build locally the Docker **image**
++ cleanup your **system** :warning:
++ create the **bridge** network
++ run the container with `docker-compose`
 
 **[¹]** the container will leave in background also if you exit, so to access again execute: `docker exec -it yocto zsh`.
 
